@@ -14,8 +14,6 @@ import java.util.List;
 @Service
 public class GoogleBooksService {
     private String url = "https://www.googleapis.com/books/v1/volumes?q=";
-    //not in use
-    private String apiKey = "AIzaSyDAujRwJaE4gsGBUbFb3y539EiilyHKmY0";
 
     public ApiResponse searchBookTitle(String bookTitle) throws Exception{
         String searchTerm = bookTitle.trim().replace(" ", "+");
